@@ -1,0 +1,44 @@
+---
+title: Updated website
+---
+
+== Updated website!
+
+Finally, the website has been updated. It is now using Jekyll as the base,
+allowing us to maintain the site easily in a git repository. This should make
+it easy for other members to contribute, as well as making it easier in general
+to keep everything up-to-date.
+
+== Project information
+We currently have a decent number of projects available on
+https://github.com/scriptkitties[Github]. There's a dedicated page available on
+the new site to write some details on our projects.
+
+== Future plans
+The plans for now are great, but we can improve the website situation in the
+future.
+
+=== Events
+If we start to attend more events than just https://fosdem.org/[FOSDEM], we
+should add a section on the events we attend, and who will be attending.
+Discussion on how to organize it will most likely stick to IRC for the
+foreseeable future.
+
+=== Project ideas
+To share project ideas and check for interest from other members, we should
+have a dedicated page to share ideas. This can be done in the current Jekyll
+build of the site, but we might also try out mailing lists for this purpose.
+
+Depending on how much this is needed, we can always switch to a more
+dynamic/interactive website. Current suggestions can always be shared on IRC
+too, of course.
+
+=== Member lists
+It might be interesting to have an overview of our official members, where they
+can share a message about themselves, and refer to their own blogs or some of
+their personal projects they want to share with the community.
+
+== Winding down
+I am currently relatively satisfied with the new version of the site, I hope
+the rest of the team is too. Suggestions can be thrown at me on IRC or with a
+cheeky PR on https://github.com/scriptkitties/website[the Github repository].
