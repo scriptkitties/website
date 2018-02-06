@@ -1,0 +1,37 @@
+---
+title: IRC::Client plugins
+---
+
+= IRC::Client plugins
+:toc: preamble
+
+https://github.com/zoffixznet/perl6-IRC-Client[`IRC::Client`] is a module for
+https://perl6.org[Perl 6]. It handles IRC connections and allows easy
+interfacing with IRC servers. Scriptkitties builds upon `IRC::Client` for
+https://github.com/scriptkitties/musashi[Musashi], our channel bot.
+
+The functionality of Musashi is split into `IRC::Client` plugins, which can be
+installed seperately. All of these modules can be reused for your own IRC bot
+project.
+
+== IRC::Client::Plugin::Github
+The
+https://github.com/scriptkitties/perl6-irc-client-plugin-github[`IRC::Client::Plugin::Github`]
+module keep the IRC channel posted on the latest updates to our repositories on
+Github.
+
+== IRC::Client::Plugin::NickServ
+https://github.com/scriptkitties/perl6-irc-client-plugin-nickserv[`IRC::Client::Plugin::NickServ`]
+deals with NickServ clients found on most IRC networks. It will attempt to auth
+to the configuration specified in a
+https://github.com/scriptkitties/perl6-config[`Config`] object.
+
+== IRC::Client::Plugin::UrlTitle
+An easy way to get some context on the URLs posted in your channel is with the 
+https://github.com/scriptkitties/perl6-irc-client-plugin-urltitle[`IRC::Client::Plugin::UrlTitle`]
+module.
+
+Whenever a URL is posted in the channel, this module will attempt to look up
+the page and report back the contents of the `<title>` tag. It can handle
+multiple URLs in a single IRC message, and will attempt to look up all the
+pages in a multithreaded fashion.
