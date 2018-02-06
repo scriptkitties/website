@@ -4,21 +4,26 @@ layout: default
 title: Home
 ---
 
-[.text-center]
-image::logo.svg[,128]
+{% assign post = site.posts.first %}
 
-== About
+<div class="logo">
+	<img src="/img/logo.svg" alt="Scriptkitties">
+</div>
+
+## About
 Scriptkitties is an online community of people who share a passion for free
 software promotion and development.
 
-=== IRC
+* Latest post: [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%-d %B %Y" }})
+
+### IRC
 Our main communication platform is IRC.  Our current main channel is
-`#scriptkitties` on https://freenode.net/[Freenode]. Those who are recognized
+`#scriptkitties` on [Freenode](https://freenode.net/). Those who are recognized
 as official Scriptkitties members have `+V` on this channel. Some of them can
 also be recognized outside of the channel, with their `@scriptkitties/nickname`
 hostmask.
 
-== Projects
+## Projects
 We work on a number of projects, which can all be found on
-https://github.com/scriptkitties/[Github]. All our projects are completely free
-as in freedom, using only free software licenses.
+[Github](https://github.com/scriptkitties/). All our projects are completely
+free as in freedom, using only free software licenses.
