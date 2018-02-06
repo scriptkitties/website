@@ -1,0 +1,7 @@
+---
+permalink: /posts.html
+layout: default
+title: Posts
+---
+
+== Posts

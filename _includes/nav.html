@@ -1,0 +1,14 @@
+<nav>
+	<ul>
+		<li class="title">
+			<a href="{{ site.baseurl }}/">{{ site.title }}</a>
+		</li>
+		{% for collection in site.collections %}
+			<li>
+				<a href="{{ collection.label | prepend: '/' | prepend: site.baseurl }}.html">
+					{{ collection.label | capitalize }}
+				</a>
+			</li>
+		{% endfor %}
+	</ul>
+</nav>
